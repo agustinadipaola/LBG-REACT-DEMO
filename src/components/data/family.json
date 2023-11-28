@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Agustina",
+        "age": 33,
+        "member": "Me"
+    },
+    {
+        "name": "Tadas",
+        "age": 30,
+        "member": "Partner"
+    },
+    {
+        "name": "Josefina",
+        "age": 35,
+        "member": "Sister"
+    },
+    {
+        "name": "Catalina",
+        "age": 36,
+        "member": "Sister"
+    },
+    {
+        "name": "Fausto",
+        "age": 4,
+        "member": "Nephew"
+    },
+    {
+        "name": "Sofia",
+        "age": 1,
+        "member": "Niece"
+    },
+    {
+        "name": "Sebastian",
+        "age": 33,
+        "member": "Brother in law"
+    },
+    {
+        "name": "Carlos",
+        "age": 66,
+        "member": "Father"
+    },
+    {
+        "name": "Miriam",
+        "age": 62,
+        "member": "Mother"
+    }
+]

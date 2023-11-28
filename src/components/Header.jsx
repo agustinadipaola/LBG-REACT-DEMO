@@ -2,7 +2,7 @@ function Header() {
 
     return (
         <header>
-            <h1>My Header</h1>
+            <h1>THE KINGS</h1>
             
         </header>
     )
