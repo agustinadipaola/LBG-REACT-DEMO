@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 // Component names MUST be capitalised
+// FFC -TO START
 function KingsSolutions(props) {
     // components return html
     // Logs for visibility NOT REQUIRED
@@ -8,6 +9,7 @@ function KingsSolutions(props) {
     // console.log("Name:", props.name);
     // console.log("Age:", props.age);
     // console.log("Member:", props.member);
+
     return (
         <div>
             <h1>___________________</h1>
