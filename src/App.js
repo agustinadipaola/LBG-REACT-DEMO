@@ -2,6 +2,8 @@
 import './App.css';
 import Header from './components/Header';
 import Pets from './components/Pets';
+import pets from './components/data/pets.json';
+
 // react component called App
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
       <h1>My Cats</h1>
       <p>Paco n Mimi</p>
       <h3> Paco Pedacitos</h3>
-      <img src='blob:https://photos.onedrive.com/d86d9735-c776-4c7c-8670-8dc2cffa17f1' alt='Paco Pedactios'></img>
+      <img src='https://photos.onedrive.com/d86d9735-c776-4c7c-8670-8dc2cffa17f1' alt='Paco Pedactios'></img>
       <Pets name="Paco" age="3" raza="Russian blue black"/>
 
       <Pets name="Jacinta Mimi" age="17" raza="Siamese"/>
