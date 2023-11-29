@@ -1,13 +1,15 @@
-import MyButton from './components/MyButton'
 
-
+import KingSolution from './components/KingSolution'
+// react component called App
 function App() {
-    return (
-        <div>
-    <MyButton/>
-        </div>
-    );
-    
+
+
+  return (
+    <div>
+      
+      <KingSolution />
+    </div>
+  );
 }
 
 export default App;
