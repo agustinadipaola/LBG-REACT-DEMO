@@ -1,5 +1,6 @@
 
-import KingSolution from './components/KingSolution'
+// import KingSolution from './components/KingSolution'
+import KingsDataLoad from './components/KingsDataLoad';
 // react component called App
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <div>
       
-      <KingSolution />
+      <KingsDataLoad />
     </div>
   );
 }
