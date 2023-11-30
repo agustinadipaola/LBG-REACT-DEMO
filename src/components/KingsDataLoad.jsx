@@ -1,24 +1,46 @@
 import axios from "axios";
 import { useState } from "react";
+import King from "./King";
+import { useEffect } from "react";
+
 function KingsDataLoad() {
+    const [filter, setFilter] = useState("");
     const [kings, setKings] = useState([]);
-    
+
 
     function getData() {
         axios.get("https://raw.githubusercontent.com/JHarry444/LBG-React-Demo/main/src/data/kings.json")
-            .then((response) => { console.log(response.data) })
-            .catch((error) => { console.log(error) })
+            .then((response) => setKings(response.data))
+            .catch((error) => console.log(error))
     }
-    const kingsData =[]
-    for (let king of kings){
-        kingsData.push(<p>{king.nm}</p>)
+
+    useEffect(() => {
+        getData()
+    }, []
+
+    )
+    const kingsComponents = []
+    for (const king of kings) {
+        if (filter === "" || king.nm.toLowerCase().startsWith(filter.toLowerCase()))
+        kingsComponents.push(
+            <King
+                key={king.nm + "" + king.yrs}
+                name={king.nm}
+                country={king.cty}
+                house={king.hse}
+                years={king.yrs}
+                />
+                )
     }
     return (
         <div>
-            <h1> Data </h1>
-            {kings.map((king) => <p>{king.nm}</p>)}
-            <button onClick={() => getData()} > Get DATA </button>
-        </div>)
+            
+            <button onClick={() => getData()}>Show all KINGS/QUEENS</button> <br />
+            <input value={filter} onChange={(e) => setFilter(e.target.value)}></input>
+            {kingsComponents}
+            <br />
+        </div>
+    )
 
 }
 export default KingsDataLoad;
